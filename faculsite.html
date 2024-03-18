@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\Gabriel Rocha\OneDrive\Faculdade\assets\exercicios.html\cadastroStyles.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <a href="index.html">Login</a>
+    <section>
+        <div class="bloco">
+            <div class="botaoVoltar">
+                <button id="botaoHome">
+                    <a href="paginaLogin.html"><b>Voltar</b></a>
+                </button>
+            </div>
+            <div class="container">
+                <img src="https://modavo.store/wp-content/uploads/2022/06/modavo.png" alt="" class="imagem-header">
+                <p class="paragrafo"><b>CPaaS Platform</b></p>
+                <form onsubmit="return validarForm()" class="form-container">
+                    <h2>Cadastre-se</h2>
+                    <div class="input-container">
+                        <input type="text" id="nome" placeholder="Nome" class="input required" name="nome" minlength="16" maxlength="60" required pattern="[A-Za-zÀ-ú ]+">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="login" placeholder="Login" class="input required" name="login" minlength="6" maxlength="6" required pattern="[A-Za-z]+">
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="senha" placeholder="Senha" class="input required" name="senha" minlength="8" maxlength="8" required>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="confirmaSenha" placeholder="Confirme a Senha" class="input required" name="confirmaSenha" required>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="cpf" placeholder="CPF" name="cpf" required pattern="[0-9]{11}" class="campos[] required">
+                    </div>
+                    <div class="input-container">
+                        <input type="date" id="dataNascimento" placeholder="Data de Nascimento" name="dataNascimento" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" min="1900-01-01" max="3000-02-18" class="campos[] required">
+                    </div>
+                    <div class="input-container">
+                        <select class="seletorSexo" name="sexo">
+                            <option value="masculino">Sexo</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="nomeMaterno" placeholder="Sobrenome Materno" name="nomeMaterno" pattern="[A-Za-zÀ-ú ]+" class="campos[] required">
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" id="telefoneCelular" placeholder="Celular" name="telefoneCelular" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[0-9])[0-9]{3}-[0-9]{4}$" class="campos[] required">
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" id="telefoneFixo" placeholder="Telefone Fixo" name="telefoneFixo" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[0-9])[0-9]{3}-[0-9]{4}$" class="campos[] required">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="endereco" placeholder="Endereço" name="endereco" class="campos[] required">
+                    </div>
+                    <div class="input-container">
+                        <button type="submit" id="botao-registrar">Registrar</button>
+                    </div>
+                    <div class="input-container">
+                        <button id="botaoLogin">
+                            <a href="paginaLogin.html">Fazer login</a>
+                        </button>
+                    </div>
+                </form>
+                <div id="res"></div>
+            </div>
+        </div>
+    </section>
+    <script src="scriptCadastro.js"></script>
+</body>
+</html>
