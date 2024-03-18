@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @gsrdc
+- 👋 Hi,I'm Gabriel - @Gsrdc
 - 👀 I’m interested in developing front-end projects
 - 🌱 I’m currently learning back-end
 - 💞️ I’m looking to collaborate on Projects and works
